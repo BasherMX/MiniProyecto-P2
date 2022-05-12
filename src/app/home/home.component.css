@@ -1,0 +1,26 @@
+.jumbotron{
+    max-width: 90%;
+    margin: 3.2rem auto 0;
+    background-color: #dadada;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba( 0 0 0/10%);
+}
+
+.centrar{
+    text-align: center;
+}
+
+.jumbotron p{
+    text-align: center;
+}
+
+.botonera{
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.jumbotron button{
+    width: 200px;
+    margin: auto;
+}

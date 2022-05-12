@@ -1,0 +1,23 @@
+<div class="tabla" >
+    <table *ngIf="indice==2;">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Sexo</th>
+            <th>Email</th>
+            <th>Fecha de Nacimiento</th>
+        </tr>
+        <tr *ngFor="let users of usuarios">
+            <td>{{ users.nombre }}</td>
+            <td>{{ users.apellidos }}</td>
+            <td>{{ users.sexo }}</td>
+            <td>{{ users.email }}</td>
+            <td>{{ users.fechanac}}</td>
+        </tr>
+    </table>
+
+    <p *ngIf="indice!=2;">NO HAY REGISTROS</p>
+</div>
+
+
+

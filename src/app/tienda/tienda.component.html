@@ -1,0 +1,36 @@
+<!--banner-->
+<div class="arriba">
+    <div class="banner">
+      <div class="banner2">
+          <div class="fondob"></div>
+      </div>
+      <div class="contenedor">
+          <h2 class="banner-titulo">Tienda</h2> 
+      </div>
+    </div>
+  </div>
+  <!--cuerpo de tienda-->
+  <div class="todo">
+  <div class="card-columns">
+    <div class="card" *ngFor="let h of comics" (click)="dato(h.index)"  data-target=".bd-example-modal-lg" data-toggle="modal">
+      <img src={{h.img}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{h.nombre}}</h5>
+      </div>
+    </div>
+  </div>
+  
+  <!--modales para cards-->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h1 class="titulomodal">{{comics[datos].nombre}}</h1>
+        <div class="sep">
+          <img [src]="comics[datos].img" alt="" class="imgmodal">
+          <h4 class="infomodal">{{comics[datos].info}}</h4>
+        </div>
+        <button type="button" class="btn btn-info">Comprar</button>
+      </div>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.arriba{
+    width: 101vw;
+    height: 600px;
+    margin-left: -22px;
+    margin-top: -76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo{
+    margin: 128px;
+    margin-top: 80px;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+.banner2{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 99%;
+    height: 600px;
+    margin: 20px auto;
+    background-image: url(../../assets/imagenes/tienda/banner/b1.jpg);
+    background-size: 100% 100%;
+    animation-name: banner;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.fondob{
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+@keyframes banner{
+    0%, 20%{
+        background-image: url(../../assets/imagenes/tienda/banner/b1.jpg); 
+        opacity: 1;
+    }
+    20%, 40%{
+        background-image: url(../../assets/imagenes/tienda/banner/b2.jpg);
+        opacity: 1;
+    }
+    40%, 60%{
+        background-image: url(../../assets/imagenes/tienda/banner/b3.jpg);
+        opacity: 1;
+    }
+    60%,80%{
+        background-image: url(../../assets/imagenes/tienda/banner/b4.jpg);
+        opacity: 1;
+    }
+    80%, 100%{
+        background-image: url(../../assets/imagenes/tienda/banner/b5.jpg);
+        opacity: 1;
+    }
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -100;
+    border-radius: 20px;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-85%) translateY(-260%);
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.banner-titulo{
+    color: white;
+    font-size: 45px;
+}
+.card:hover{
+    background-color:rgba(55, 55, 55, 0.82);
+    color: white;
+    cursor: pointer;
+}
+.titulomodal, .card-title{
+    font-family: 'Orbitron';
+}
+.titulomodal{
+    text-align: center;
+}
+.sep{
+    display: flex;
+}
+.imgmodal{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+.infomodal{
+    margin: 5px;
+}
+
+@media only screen and (max-width: 100000000px) {
+    .card-columns{
+        column-count: 3;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .card-columns{
+        column-count: 3;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .card-columns{
+        column-count: 2;
+    }
+    .arriba{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .card-columns{
+        column-count: 2;
+    }
+    .todo{
+        margin: 0px;
+    }
+    .arriba{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .card-columns{
+        column-count: 1;
+    }
+    .todo{
+        margin: 0px;
+    }
+    .arriba{
+        display: none;
+    }
+}
+
+.card-columns{
+    transform: scale(.9);
+}
+
+.card{
+    margin: 1rem 2rem;
+}
+
+.card:nth-child(2n+1){
+    transform: rotate(-2deg);
+}
+
+.card:nth-child(2n){
+    transform: rotate(2deg);
+}
+
+.card:nth-child(2n+5){
+    transform: rotate(2deg);
+}
+.card:nth-child(2n+9){
+    transform: rotate(-2deg);
+}

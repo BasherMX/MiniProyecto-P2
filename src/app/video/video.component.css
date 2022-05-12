@@ -1,0 +1,30 @@
+div{
+    width: 100vw;
+    height: 100vh;
+    margin-left: -15px;
+    margin-top: -52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+iframe{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightblue;
+    transform: scale(.9);
+}
+@media only screen and (max-width: 990px) {
+    iframe{
+        width: 500px;
+        height: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    iframe{
+        width: 400px;
+        height: 200px;
+    }
+  }
+
